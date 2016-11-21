@@ -62,9 +62,12 @@ h1 {
     padding: 20px;
 }
 
+h2, ul span {
+	font-weight: 100;
+}
+
 h2 {
 	font-size: 3rem;
-	font-weight: 100;
 }
 
 h3 {
@@ -123,7 +126,6 @@ form a {
 	color: white;
 	text-decoration: none;
 	display:inline-block;
-	font-weight: 600;
 }
 
 form a:hover {
@@ -134,16 +136,22 @@ form a:hover {
 /*--------------------------------------------------------------
 1.5 - LISTS
 -------------------------------------------------------------- */
-dt, dd {
-	display: inline-block
+li {
+	display: block;
 }
-dt {
-	font-weight:100;
+
+span {
 	width: 20px;
 }
-dd {
+
+li, form a {
 	font-weight: 600;
 }
+
+ul {
+	padding-left: 0;
+}
+
 /*--------------------------------------------------------------
 2.0 - MAIN MENU
 -------------------------------------------------------------- */
@@ -355,7 +363,7 @@ figure {
 -------------------------------------------------------------- */
 
 #hero { 
-  background: url(../img/hero.jpeg) no-repeat center center fixed; 
+  background: url(../img/hero-sm.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -432,6 +440,90 @@ figure {
 
 
 @media screen and (max-width: 768px) {
+	/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	/** 1.0 - TYPOGRAPHY **/
+	
+	/** 1.1 - HEADINGS **/
+	
+	
+	h1 {
+		font-size: 4rem;
+	}
+	
+	h2 {
+		font-size: 2.3rem;
+	}
+	
+	h3 {
+		font-size: 1.8rem;
+	}
+	
+	/** 2.0 - NAVIGATION MENUS **/
+	
+	/** 2.1 - MAIN NAV **/
+	
+	header nav li {
+		padding: 0;
+	}
+	
+	header nav ul {
+		padding-left: 0;
+		text-align: center;
+	}
+	
+	header nav {
+		padding-bottom: 0;
+	}
+	
+	/** 3.0 - CONTENT **/
+	
+	/** 3.1 - SITE STRUCTURE **/
+	
+	[class*="col-"] {
+		width: 100%;
+	}
+	
+	.col-1-6 {
+		width: 45%;
+	}
+	
+	.col-1-4 {
+		padding: 0;
+		margin-bottom: 40px;
+	}
+	
+	.p-t-lg, .p-b-lg {
+		padding: 20px 0;
+	}
 	
 	
 }
